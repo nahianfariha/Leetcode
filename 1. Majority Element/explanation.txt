@@ -1,0 +1,72 @@
+🧩 Problem: Majority Element
+
+Difficulty: Easy
+
+The task is to find the element that appears more than ⌊n/2⌋ times in an array.
+
+🥇 Approach 1: Brute Force
+
+Logic:
+For every element, count its frequency in the array.
+If any element’s count > n/2, that’s the majority element.
+
+Code (Python):
+
+def majorityElement(nums):
+    n = len(nums)
+    for i in range(n):
+        count = 0
+        for j in range(n):
+            if nums[j] == nums[i]:
+                count += 1
+        if count > n // 2:
+            return nums[i]
+
+
+Time Complexity: O(n²) – checking each element’s frequency
+Space Complexity: O(1) – no extra space used
+
+🥈 Approach 2: Sorting Method
+
+Logic:
+If an element occurs more than n/2 times, it will always occupy the middle position after sorting.
+
+Code (Python):
+
+def majorityElement(nums):
+    nums.sort()
+    return nums[len(nums)//2]
+
+
+Time Complexity: O(n log n) – due to sorting
+Space Complexity: O(1) – if sorting done in place
+
+🥇 Approach 3: Boyer–Moore Voting Algorithm
+
+Logic:
+Use a counter.
+
+Pick a candidate and increase count if the same, decrease otherwise.
+
+The remaining candidate after one full pass is the majority element.
+
+Code (Python):
+
+def majorityElement(nums):
+    count = 0
+    candidate = None
+
+    for num in nums:
+        if count == 0:
+            candidate = num
+        count += (1 if num == candidate else -1)
+    
+    return candidate
+
+
+Time Complexity: O(n) – single pass through array
+Space Complexity: O(1) – only two variables used
+
+✅ Final Submission
+
+The Boyer–Moore Algorithm was submitted since it’s the most efficient in both time and space.
