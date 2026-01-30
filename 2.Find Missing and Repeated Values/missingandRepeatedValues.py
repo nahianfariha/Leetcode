@@ -16,10 +16,13 @@ class Solution:
                 if grid[i][j] in s:  # If number is already in set, it's repeated
                     a = grid[i][j]  # Store repeated number
                     ans.append(a)  # Add repeated number to answer list
-                s.add(grid[i][j])  # Add number to the set
+                else:
+                    s.add(grid[i][j])  # Add number to the set
 
         # Calculate expected sum of numbers from 1 to n^2
-        expSum = (n * n) * (n * n + 1) // 2
+        expSum = (
+            (n * n) * (n * n + 1) // 2
+        )  # formula for sum of first m natural numbers: m(m+1)/2 where m = n^2
 
         # Derive the missing number using formula: missing = expected_sum + repeated - actual_sum
         b = expSum + a - actualSum
