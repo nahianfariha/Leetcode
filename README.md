@@ -2,38 +2,15 @@ Hi 👋
 
 These LeetCode solutions were written as part of my problem-solving and learning journey. I often use ChatGPT as a learning assistant for writing explanations and initial code drafts. However, I personally review, modify, and optimize the solutions, including analyzing time and space complexity where needed. The goal of this repository is to document my learning process and continuously improve my problem-solving skills.
 
-🧠 **My Learning Flow**
+🧠 MY LEARNING FLOW
 
-┌─────────────────────────────┐  
-│  Understand the Question    │  
-└──────────────┬──────────────┘  
-               ↓  
-┌───────────────────────────────────────────┐  
-│ Discuss the problem with ChatGPT          │  
-│ (to verify understanding and approach)    │  
-└──────────────┬────────────────────────────┘  
-               ↓  
-┌───────────────────────────────┐  
-│ Write Pseudocode and review it│  
-│ with ChatGPT                  │  
-└──────────────┬────────────────┘  
-               ↓  
-┌─────────────────────────────┐  
-│ Implement the Code in Python │  
-└──────────────┬──────────────┘  
-               ↓  
-┌──────────────────────────────────────────────┐  
-│ Make small improvements and take help         │  
-│ from YouTube tutorials if needed              │  
-└──────────────┬───────────────────────────────┘  
-               ↓  
-┌───────────────────────────────┐  
-│ Analyze Time & Space Complexity│  
-└──────────────┬────────────────┘  
-               ↓  
-┌───────────────────────────────┐  
-│ Reflect and Optimize          │  
-└───────────────────────────────┘
+1. Understand the Question  
+2. Discuss the Problem with ChatGPT if my understanding is right or wrong  
+3. Write and Discuss Pseudocode with ChatGPT  
+4. Implement the Code in Python with ChatGPT  
+5. Make Small Improvements and Take Help from Youtube Tutorials
+6. Analyze Time and Space Complexity  
+7. Reflect and Optimize
 
 I’m solving all problems in Python, as I plan to pursue Machine Learning in the long run.
 
